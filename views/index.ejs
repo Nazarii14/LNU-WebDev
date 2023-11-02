@@ -1,0 +1,29 @@
+<div class="author">
+  <div class="description">
+    <h1 class="author__heading"><span class="blog-by">Blog by</span><br/> Nazarii Protskiv</h1>
+    <p class="author__body">FullStack Python Developer</p>
+    <a class="personal-website-link" href="https://nazarii-protskiv-portfolio.netlify.app/">personal website</a>
+  </div>
+  <img data-tilt-scale="1.05" src="/img/1.png" alt="a clown is entertaining a crowd of people" class="creator-image"/>
+</div>
+
+
+<section class="articles">
+  <h2 class="articles__heading">Latest Posts</h2>
+
+  <ul class="article-ul">
+    <% data.forEach(post => { %>
+      <li>
+        <a href="/post/<%= post._id %>">
+          <span><%= post.title %></span>
+          <span class="article-list__date"><%= post.createdAt.toDateString() %></span>
+        </a>
+      </li>
+    <% }) %>
+  </ul>
+
+  <% if (nextPage !== null) { %>
+    <a href="/?page=<%= nextPage %>" class="pagination">&lt; View Older Posts</a>
+  <% } %>
+
+</section>
