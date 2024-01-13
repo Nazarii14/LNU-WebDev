@@ -1,5 +1,5 @@
 # ДВВС Основи веб-розробки
-You can visit website clicking [HERE](https://express-blog-1.onrender.com/)
+You can visit hosted website clicking [HERE](https://express-blog-1.onrender.com/)
 ### Instructions
 1. Open your terminal.
 2. Clone this repo.
